@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="author" content="Aayush Pandey">
+    <meta name="keywords" content="Camera">
+    <meta name="description" content="CamShot is an ecommerce website that sells quality camera and camera equipments all over Nepal. Buy Camera at reasonable prise and get chance to win gift cards worth upto Rs. 10,000">
+    <title>CamShot-BUY CAMERA ON BEST PRISE</title>
+    <!--Keywords are used for SEO, title is viewed in the tab and during google search and description is also showed in during google search-->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .SliderContainer{
+            width: 100%;
+            height: auto;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .imageproducts{
+            border-radius: 80px;
+            padding: 30px 30px;
+        }
+        table img, th{
+            background-color: #ffffff;
+        }
+        table{
+            border-collapse: separate;
+            border-color: #ffffff;
+        }
+        .borderimage{
+            background-color: #ffffff;
+        }
+        .products{
+            background-color: #ffffff;
+        }
+        .table{
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="image/LOGO.jpg" alt="LOGO" style="width:12%">
+            <nav>
+                <ul  class="Navlist">
+                    <ls>
+                        <a href="index.html" class="linkitem">Home</a>
+                    </ls>
+                    <ls>
+                        <a href="html/aboutus.html" class="linkitem">AboutUs</a>
+                    </ls>
+                    <ls>
+                        <a href="html/product.html" class="linkitem">Product</a>
+                    </ls>
+                    <ls>
+                        <a href="html/research.html" class="linkitem">Research</a>
+                    </ls>
+                    <ls>
+                        <a href="html/blog.html" class="linkitem">Blog</a>
+                    </ls>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="login.html" class="button1">Log In</a>
+                <a href="getstrated.html" class="button2">Get Started</a>
+            </div>
+
+    </header>
+    <div class="SliderContainer">
+        <div id="slideEffects">
+            <img src="image/3.jpg">
+        </div>
+    </div>
+    <script>
+        var imagePath = ['image/1.jpg','image/2.jpg','image/3.jpg'];
+        var container =document.getElementById("slideEffects");
+        var i=0;
+        setInterval(slide,3000)
+        function slide(){
+        if(i<imagePath.length)
+        {
+            i=i+1;
+        }
+        else{
+            i=1;
+        }
+        container.innerHTML = "<img src="+imagePath[i-1]+">";
+    }
+    </script>
+    <img src="image/beyoundimaginary.JPG" style="width:100%">
+    <div class="products" >
+        <table width="100%"class="table">
+            <tr>
+            <th colspan=3 style="font-size: 2.5em ;color:#928D8D; padding-top: 30px; 
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;">Our Exclusive</th>
+            </tr>
+            <tr>
+                <th><a onclick="showAlert()" class="borderimage"><img src="image/Tripod.jpg" class="imageproducts"></a></th>
+                <th><a href="html/product.html" class="borderimage"><img src="image/Camera.jpg" class="imageproducts"></a></th>
+                <th><a href="html/product.html" class="borderimage"><img src="image/Lens.jpg" class="imageproducts"></a></th>
+            </tr>
+        </table>
+        <script>
+            function showAlert() {
+                alert ("Sorry but this product is out of sale due to such high demand!");
+            }
+        </script>
+    </div>
+
+    <footer class="footer">
+        <img src="image/LOGO.jpg" style="align-self: center; width:15%; align-self: center;">
+        <div class="container2">       
+            <div class="footercolumn">
+                <h2 style="color: white; background-color: black; padding: 20px 0px">Capture Your Moments</h2>
+                <ul>
+                    <li><p>Our ecommerce website is a one-stop shop</p></li>
+                    <li><p>for all your camera and photography equipment</p></li>
+                    <li><p>needs. We offer a wide range of high-quality </p></li>
+                    <li><p>cameras from top brands, including DSLRs, </p></li>
+                    <li><p>mirrorless cameras, point-and-shoots, and more.</p></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="html/aboutus.html"class="black">About Us</a></li>
+                    <li><a href="#"class="black">FAQ</a></li>
+                    <li><a href="#"class="black">Privacy Policy</a></li>
+                    <li><a href="#"class="black">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#"class="black">Contact</a></li>
+                    <li><a href="#"class="black">Return Policy</a></li>
+                    <li><a href="#"class="black">Order Status</a></li>
+                    <li><a href="#"class="black">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#"class="black">Camera</a></li>
+                    <li><a href="#"class="black">Lens</a></li>
+                    <li><a href="#"class="black">Tripod</a></li>
+                    <li><a href="#"class="black">Battery</a></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="facebook.com"class="black">Facebook</a></li>
+                    <li><a href="tiktok.com"class="black">TikTok</a></li>
+                    <li><a href="youtube.com"class="black">Youtube</a></li>
+                    <li><a href="instagram.com"class="black">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

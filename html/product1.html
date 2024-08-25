@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../css/style2.css">
+    <title>CamShot-Product Details</title>
+    <style type="text/css">
+
+        .container{
+            width: 100%;
+            height: 660px;
+            display: flex;
+            padding-bottom: 700px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .row{
+            width: 100%;
+            height: 650px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0px 3px 10px  rgb(103, 103, 103);
+            padding: 0px 0px;
+        }
+
+        .box-image{
+            width: 35.37%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .box-desc{
+            padding: 30px 30px;
+            height: 100%;
+            width: 64.63%;
+        }
+
+        .box-desc h2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 45px;
+        }
+
+        .box-desc h3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 5px;
+        }
+
+        .box-desc p{
+            font-size: 20px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            font-weight: 400px;
+        }
+
+        .buy-outer a {
+            padding: 13px 45px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: 600;
+            background-color: black;
+            border-radius: 25px;
+            font-size: 27px;
+        }
+       
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="../image/LOGO2.jpg" alt="LOGO" style="width:12%;" >
+            <nav>
+                <ul  class="Navlist">
+                    <ls>
+                        <a href="../index.html" class="linkitem">Home</a>
+                    </ls>
+                    <ls>
+                        <a href="aboutus.html" class="linkitem">AboutUs</a>
+                    </ls>
+                    <ls>
+                        <a href="product.html" class="linkitem">Product</a>
+                    </ls>
+                    <ls>
+                        <a href="research.html" class="linkitem">Research</a>
+                    </ls>
+                    <ls>
+                        <a href="blog.html" class="linkitem">Blog</a>
+                    </ls>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <a href="#" class="button1">Log In</a>
+                <a href="#" class="button2">Get Started</a>
+            </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+            <div class="box-image">
+                <img src="../image/p1.jpg" class="product-pic">
+            </div>
+
+            <div class="box-desc">
+                <h2>Cannon 1230</h2>
+                <h3>Rs. 1,98,000</h3>
+                <p class="Reviews">Reviews</p>
+                <img src="../image/star.jpg" width="3%">
+                <img src="../image/star.jpg" width="3%">
+                <img src="../image/star.jpg" width="3%">
+                <img src="../image/star.jpg" width="3%">
+                <img src="../image/star.jpg" width="3%">
+                <hr style="width:100%">
+                <h3>Product Description</h3>
+                <p style="color:rgb(44, 44, 44); padding-bottom: 5px;">The Cannon 1230 uses a 20.1MP Type-1 sensor like its predecessor. However, it has an
+                    ultrawide 20mm lens and allows for 2x digital zoom at 1080p and 1.5x at 4K. There is no
+                    built-in optical stabilization, but the camera has electronic stabilization. However, turning
+                    it on will limit the zoom to a 1.23x crop.<br>
+                    <b>Monitor</b>:       7.5 cm TFT LCD panel (flip-out)<br>
+                    <b>Connectivity</b>:  Bluetooth 4.1, Wi-Fi, NFC<br>
+                    <b>Port</b>:          USB Type-C, microSD card, 3.5mm, Mini HDMI<br>
+                    <b>Storage media</b>: SD memory card<br>
+                    <b>Battery</b>:       60 min recording<br>
+                    <b>Weight</b>:        256 grams<br>
+                    <b>Colour option</b>: black and white<br>
+                    <hr style="width:100%">
+                </p>
+                <div class="buy-outer" style="padding-left: 345px; padding-top: 65px;"><a class="buy" onclick="showAlert()" href="#">Buy</a></div>
+                <script>
+                    function showAlert() {
+                        alert ("Thanks for choosing a good product!! Your Product will be delivered within 24 hours!!");
+                    }// it is used to congratulate that the user has useeed the specific produc //
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <img src="../image/LOGO.jpg" style="align-self: center; width:15%; align-self: center;">
+        <div class="container2">       
+            <div class="footercolumn">
+                <h2 style="color: white; background-color: black; padding: 20px 0px">Capture Your Moments</h2>
+                <ul>
+                    <li><p>Our ecommerce website is a one-stop shop</p></li>
+                    <li><p>for all your camera and photography equipment</p></li>
+                    <li><p>needs. We offer a wide range of high-quality </p></li>
+                    <li><p>cameras from top brands, including DSLRs, </p></li>
+                    <li><p>mirrorless cameras, point-and-shoots, and more.</p></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#"class="black">About Us</a></li>
+                    <li><a href="#"class="black">FAQ</a></li>
+                    <li><a href="#"class="black">Privacy Policy</a></li>
+                    <li><a href="#"class="black">Shipping Policy</a></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Get Help</h4>
+                <ul>
+                    <li><a href="#"class="black">Contact</a></li>
+                    <li><a href="#"class="black">Return Policy</a></li>
+                    <li><a href="#"class="black">Order Status</a></li>
+                    <li><a href="#"class="black">Payment Options</a></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Shop</h4>
+                <ul>
+                    <li><a href="#"class="black">Camera</a></li>
+                    <li><a href="#"class="black">Lens</a></li>
+                    <li><a href="#"class="black">Tripod</a></li>
+                    <li><a href="#"class="black">Battery</a></li>
+                </ul>
+            </div>
+            <div class="footercolumn">
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="facebook.com"class="black">Facebook</a></li>
+                    <li><a href="tiktok.com"class="black">TikTok</a></li>
+                    <li><a href="youtube.com"class="black">Youtube</a></li>
+                    <li><a href="instagram.com"class="black">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

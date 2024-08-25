@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CamShot</title>
+  <link rel="stylesheet" href="../css/style2.css"><!-- linking to the css file-->
+  <style type="text/css">
+    /* Reset default browser styles */
+body, h1, h2, p, ul, li, img {
+  margin: 0;
+  padding: 0;
+}
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+*{
+  margin:0px ;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+h5{
+  font-family: italiana;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  background-image: url(../image/background.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+.text{
+  margin:0px ;
+  padding: 0px;
+  font-family: "montserrant", sans-serif;
+  color: #fff;
+}
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+
+}
+.image{
+  width: 400px;
+  position: relative;
+  border-radius: 10px;
+  margin-right: 15px;
+  float: right;
+  margin-right: 15px;
+}
+img{
+  width: 100%;
+  display: block;
+  margin: auto;
+  float: right;
+  margin-right: 15px;
+}
+.content{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.content:hover{
+  opacity: 1;
+}
+.content h1{
+  font-size: 45px;
+  color: #ffe100;
+  margin-bottom: 15px;
+}
+.content p{
+  font-size: 19px;
+  color: #fff;
+}
+.content > *{
+  transform: translate(25px);
+  transition: transform 0.6s;
+}
+.content > *{
+  transform: translate(0px);
+  }
+
+  
+nav {
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px;
+}
+
+section {
+  padding: 20px;
+}
+button{
+  color: #fbfcfd;
+  padding:10px 25px;
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  outline: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  min-width: 200px;
+  transition: color 0.4s linear;
+}
+.content3:hover{
+  color: #000000;
+
+}
+.btn:hover{
+  cursor: pointer;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  text-transform: uppercase;
+  min-width: 200px;
+  transition: color 0.4s linear;
+  color: #000000;
+  background: transparent;
+  padding:10px 25px;
+  outline: none;
+
+}
+.content3{
+  color:#fbfcfd;
+  position: absolute;
+  top: 50%;
+  font-size: 45px;
+  left: 8%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.content3: hover{
+  opacity: 10;
+}
+.wrapper1{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  display: center;
+}
+.image1{
+  width: 400px;
+  position: relative;
+  border-radius: 10px;
+  margin-right: 15px;
+  float: left;
+  margin-right: 15px;
+}
+img{
+  width: 100%;
+  display: block;
+  margin: auto;
+  float: left;
+  margin-right: 15px;
+}
+.content1{
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.6s;
+}
+.content1:hover{
+  opacity: 1;
+}
+.content1 h1{
+  font-size: 45px;
+  color: #ffe100;
+  margin-bottom: 15px;
+}
+.content1 p{
+  font-size: 19px;
+  color: #fff;
+}
+.content1 > *{
+  transform: translate(25px);
+  transition: transform 0.6s;
+}
+.content1 > *{
+  transform: translate(0px);
+  }
+
+section img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.image-comparison {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.image-container {
+  position: relative;
+  width: 45%;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.description-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.description {
+  text-align: left;
+  width: 50%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .description {
+    width: 100%;
+  }
+}
+
+
+.description h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.description p {
+  font-size: 14px;
+}
+.wrapper3{
+  margin:10px auto;
+  width: 100%;
+}
+.text-box h2{
+  font-size: 42px;
+  display: center;
+  direction: column;
+}
+.text-box p{
+  font-size: 16px;
+}
+.text-box{
+  color: #000000;
+}
+.wrapper4{
+  margin:100px auto;
+  width: 100%;
+}
+.text-box1 h2{
+  font-size: 42px;
+  display: left;
+  direction: column;
+}
+.text-box1 p{
+  font-size: 16px;
+}
+.text-box1{
+  color: #000000;
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="../image/LOGO2.jpg" alt="LOGO" style="width:12%; margin: 0;" >
+        <nav style="padding: 0px; border-radius: 30px;">
+            <ul  class="Navlist">
+                <ls>
+                    <a href="../index.html" class="linkitem">Home</a>
+                </ls>
+                <ls>
+                    <a href="aboutus.html" class="linkitem">AboutUs</a>
+                </ls>
+                <ls>
+                    <a href="product.html" class="linkitem">Product</a>
+                </ls>
+                <ls>
+                    <a href="research.html" class="linkitem">Research</a>
+                </ls>
+                <ls>
+                    <a href="blog.html" class="linkitem">Blog</a>
+                </ls>
+            </ul>
+        </nav>
+        <div class="buttons">
+            <a href="#" class="button1">Log In</a>
+            <a href="#" class="button2">Get Started</a>
+        </div>
+</header>
+	<!--Research Page Intro-->
+  <div class="hero">
+    <div class="text">
+    <h5>Research Page</h5>
+  </div>
+  <div class="content3" style="padding: 30px 30px; background: transparent;">
+    <small style="background: transparent;"> We sell</small>
+    <h1 style="background: transparent;">Greatness</h1>
+    <!--
+    <div class="btn"><button type="button">Take a tour</button></div>
+-->
+  </div>
+    
+  </div>
+    <nav>
+    <ul>
+      <!--Navigation bar starts-->
+      <li><a href="#camera-types">Camera Types</a></li>
+      <li><a href="#camera-features">Camera Features</a></li>
+      <li><a href="#lens-options">Lens Options</a></li>
+      <li><a href="#camera-accessories">Camera Accessories</a></li>
+      <li><a href="#photography-techniques">Photography Techniques</a></li>
+    </ul>
+  </nav>
+  <!--Hover Image with Text-->
+  <section id="camera-types">
+  	<div class="wrapper3">
+  		
+  		 <div class="wrapper1">
+  		 	<div class="image1">
+
+		<img src="../image/res2.jpg" height="150px" width="130px" alt="content"> 
+		<div class="content1">
+		<h1 style="background: transparent">Camera</h1>
+		<p style="background: transparent">Here you can learn about the different types of cameras.</p>
+  		
+  			</div>
+</div>
+<!--Camera Types Explaination-->
+<div class="text-box">
+    <h2>Camera Types</h2>
+    <p><li>DSLR (Digital Single-Lens Reflex) Cameras: Professional-grade cameras with interchangeable lenses.</li><li>Point-and-Shoot Cameras: Compact and easy-to-use cameras with fixed lenses, suitable for everyday photography and casual users.</li><li>Action Cameras: Small, rugged cameras designed for capturing high-action activities, often waterproof and shockproof.</li><li>Point-and-Shoot Cameras: Compact and easy-to-use cameras with fixed lenses, suitable for everyday photography and casual users.</li>
+<li>Action Cameras: Small, rugged cameras designed for capturing high-action activities, often waterproof and shockproof.</li><li>Medium Format Cameras: Cameras with larger image sensors for exceptional image quality, commonly used in professional and studio photography.</li></p>
+   </div>
+</div>
+</div>
+</div>
+  </section>
+  <!--Hover Image with Text-->
+  <section id="camera-features">
+  	<div class="wrapper4">
+<div class="wrapper">
+<div class="image">
+		<img src="../image/res1.jpg" height="150" width="130" alt="content"> 
+		<div class="content">
+		<h1 style="background: transparent">CamShot</h1>
+		<p style="background: transparent">Click The Moment</p>
+	</div>
+</div>
+<!--Camera Types Explaination-->
+	<div class="text-box1">
+    <h2>Camera Features</h2>
+    <p><li>Megapixels: Determines the resolution and level of detail in photos.</li>
+<li>Autofocus System: Enables accurate and fast focusing on the subject.</li>
+<li>Image Stabilization: Reduces blur caused by camera shake for sharper images.</li><li>Shooting Modes: Different modes for various scenarios, including automatic, manual, and creative options.</li>
+<li>Video Recording: Ability to record videos with options for resolution, frame rate, and external microphone support.</li><li>Connectivity Options: Built-in Wi-Fi, Bluetooth, or NFC for wireless transfer and remote control.</li><li>Burst Mode and Continuous Shooting: Allows capturing rapid series of images for action photography.</li><li>LCD Screen and Viewfinder: High-resolution display for live view composition and accurate preview.</li></p>
+</div>
+</div>
+</div>
+</div>
+</section>
+  <!--Hover Image with Text-->
+  <section id="lens-options">
+  	<div class="wrapper3">
+  	<div class="wrapper1">
+    <div class="image1">
+		<img src="../image/im3.jpg" height="150" width="130" alt="content"> 
+		<div class="content1">
+		<h1 style="background: transparent">Cam</h1>
+		<p style="background: transparent">The Best </p>
+	</div>
+</div>
+<!--Camera Types Explaination-->
+<div class="text-box">
+    <h2 style="background: transparent">Lens Options</h2>
+    <p style="background: transparent"><li>Prime Lenses: Fixed focal length lenses that offer excellent image quality, wide apertures, and are typically lighter and more compact than zoom lenses.</li><li>Zoom Lenses: Variable focal length lenses that provide versatility by allowing you to zoom in or out, offering a range of focal lengths in a single lens. </li><li>Wide-Angle Lenses: Lenses with a shorter focal length that capture a wider field of view.</li></p>
+</div>
+</div>
+</div>
+</div>
+ 
+  </section>
+  <!--Camera Types Explaination-->
+  <section id="camera-accessories">
+    <h2>Camera Accessories</h2>
+    <p><li>Tripods: Sturdy stands that provide stability for your camera, reducing the risk of camera shake and allowing for long-exposure shots, group photos, or self-portraits.</li></p>
+    
+  </section>
+  <!--Camera Types Explaination-->
+  <section id="photography-techniques">
+    <h2>Photography Techniques</h2>
+    <p><li>Rule of Thirds: The rule of thirds involves dividing the frame into a grid of nine equal parts and placing the main subject or points of interest along the gridlines or at their intersections. This technique adds balance and visual interest to the composition.</li></p>
+    
+  </section>
+  <!--Image comparison Starts-->
+  <section>
+  	<h2> Reference 1</h2>
+   <div class="image-comparison">
+    <div class="image-container">
+      <img src="../image/evervault.png" alt="Image 1">
+    </div>
+    <div class="image-container">
+      <img src="../image/sc2.JPG" alt="Image 2">
+    </div>
+  </div>
+  <!--Description Of Refrences-->
+  <div class="description-container">
+    <div class="description">
+      <h3>Refrence Photo</h3>
+      <p>As we can see the navigation bar in the refrence picture , this design inspried us to make a design similar in our website.<a href="https://godly.website/website/960-evervault-customers">(https://godly.website/website/960-evervault-customers)</a></p>
+    </div>
+    <div class="description">
+      <h3>Our Webpage</h3>
+      <p>This is how we modified and created our own navigation bar design.</p>
+    </div>
+  </div>
+</section>
+<section>
+<h2> Reference 2</h2>
+   <div class="image-comparison">
+    <div class="image-container">
+      <img src="../image/apple ref.png" alt="Image 1">
+    </div>
+    <div class="image-container">
+      <img src="../image/sc1.JPG" alt="Image 2">
+    </div>
+  </div>
+  <div class="description-container">
+    <div class="description">
+      <h3>Refrence Photo</h3>
+      <p>As we can see the container in this website, we really liked the design of it so we tried making it.<a href="https://www.apple.com/store">(https://www.apple.com/store)</a></p>
+    </div>
+    <div class="description">
+      <h3>Our Webpage</h3>
+      <p>This is how we modified and made it, in our own website</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2> Reference 3</h2>
+   <div class="image-comparison">
+    <div class="image-container">
+      <img src="../image/rf4.JPG" alt="Image 1">
+    </div>
+    <div class="image-container">
+      <img src="../image/sc4.JPG" alt="Image 2">
+    </div>
+  </div>
+  <div class="description-container">
+    <div class="description">
+      <h3>Refrence Photo</h3>
+      <p>As for footer design we got inspired from this website <a href="https://xari.com/">(https://xari.com/)</a></p>
+    </div>
+    <div class="description">
+      <h3>Our Webpage</h3>
+      <p>This is how we modified and created our own footer design.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2> Reference 4</h2>
+   <div class="image-comparison">
+    <div class="image-container">
+      <img src="../image/Samsung.png" alt="Image 1">
+    </div>
+    <div class="image-container">
+      <img src="../image/sc3.JPG" alt="Image 2">
+    </div>
+  </div>
+  <div class="description-container">
+    <div class="description">
+      <h3>Refrence Photo</h3>
+      <p>Billboard of Samsung<a href="https://www.samsungplaza.com.np/">(https://www.samsungplaza.com.np/)</a></p>
+    </div>
+    <div class="description">
+      <h3>Our Webpage</h3>
+      <p>This is how we modified and created our billboard design.</p>
+    </div>
+  </div>
+</section>
+<section>
+  <h2> Reference 5</h2>
+   <div class="image-comparison">
+    <div class="image-container">
+      <img src="../image/CamScanner.png" alt="Image 1">
+    </div>
+    <div class="image-container">
+      <img src="../image/Frame 4 (1).jpg" alt="Image 2">
+    </div>
+  </div>
+  <div class="description-container">
+    <div class="description">
+      <h3>Refrence Photo</h3>
+      <p>Name of Website<a href="https://www.camscanner.com/">(https://www.camscanner.com/)</a></p>
+    </div>
+    <div class="description">
+      <h3>Our Webpage</h3>
+      <p>We named our website inspired from this website.</p>
+    </div>    
+  </div>
+</section>
+<footer class="footer">
+  <img src="../image/LOGO.jpg" style="align-self: center; width:15%; align-self: center;">
+  <div class="container2">       
+      <div class="footercolumn">
+          <h2 style="color: white; background-color: black; padding: 20px 0px">Capture Your Moments</h2>
+          <ul>
+              <li><p>Our ecommerce website is a one-stop shop</p></li>
+              <li><p>for all your camera and photography equipment</p></li>
+              <li><p>needs. We offer a wide range of high-quality </p></li>
+              <li><p>cameras from top brands, including DSLRs, </p></li>
+              <li><p>mirrorless cameras, point-and-shoots, and more.</p></li>
+          </ul>
+      </div>
+      <div class="footercolumn">
+          <h4>Company</h4>
+          <ul>
+              <li><a href="aboutus.html"class="black">About Us</a></li>
+              <li><a href="#"class="black">FAQ</a></li>
+              <li><a href="#"class="black">Privacy Policy</a></li>
+              <li><a href="#"class="black">Shipping Policy</a></li>
+          </ul>
+      </div>
+      <div class="footercolumn">
+          <h4>Get Help</h4>
+          <ul>
+              <li><a href="#"class="black">Contact</a></li>
+              <li><a href="#"class="black">Return Policy</a></li>
+              <li><a href="#"class="black">Order Status</a></li>
+              <li><a href="#"class="black">Payment Options</a></li>
+          </ul>
+      </div>
+      <div class="footercolumn">
+          <h4>Shop</h4>
+          <ul>
+              <li><a href="#"class="black">Camera</a></li>
+              <li><a href="#"class="black">Lens</a></li>
+              <li><a href="#"class="black">Tripod</a></li>
+              <li><a href="#"class="black">Battery</a></li>
+          </ul>
+      </div>
+      <div class="footercolumn">
+          <h4>Follow Us</h4><!-- this will provode the link to all the websites-->
+          <ul>
+              <li><a href="facebook.com"class="black">Facebook</a></li>
+              <li><a href="tiktok.com"class="black">TikTok</a></li>
+              <li><a href="youtube.com"class="black">Youtube</a></li>
+              <li><a href="instagram.com"class="black">Instagram</a></li>
+          </ul>
+      </div>
+  </div>
+</footer>
+</body>
+</html>
